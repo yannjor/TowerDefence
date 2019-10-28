@@ -29,17 +29,17 @@ We don't have any specific group roles as of yet. Markus will be the project man
 In addition to all the basic features, we are planning to implement the following advanced features:
 <br />
 - **Non hardcoded maps (read from file)**
-    - The maps will be read from a file that will be in text format. The file will consist of a grid of symbols. Each symbol will define what each tile contains. The user should be able to resize the map to almost any size just by adding another row or column to the grid in the file.
+  - The maps will be read from a file that will be in text format. The file will consist of a grid of symbols. Each symbol will define what each tile contains. The user should be able to resize the map to almost any size just by adding another row or column to the grid in the file.
 - **Upgradeable towers**
-    - The towers should be upgradeable for a specific cost depending on the tower and current level of the tower. Upgrading a tower may increase the damage, range and attack speed of a tower and could possibly add some special features to the tower
+  - The towers should be upgradeable for a specific cost depending on the tower and current level of the tower. Upgrading a tower may increase the damage, range and attack speed of a tower and could possibly add some special features to the tower
 - **More kinds of enemies and towers**
-    - We will make a few different types of enemies and towers. The different kinds of enemies will have different health or speed. The various kinds of towers will have different damage, range and attack speed.
+  - We will make a few different types of enemies and towers. The different kinds of enemies will have different health or speed. The various kinds of towers will have different damage, range and attack speed.
 - **A list of high scores that is saved locally per map, with a username**
-    - The high scores will be saved to a file which contains each map with highscores for each user that has played that map. The user will be able to view the highscore list ingame.
+  - The high scores will be saved to a file which contains each map with highscores for each user that has played that map. The user will be able to view the highscore list ingame.
 - **Dynamic enemy paths that are altered with the placement of towers**
-    - Dynamic enemy paths will be implemented using the A&ast; search algorithm, a more thorough explanation is in the Algorithms section of this document. The players should not be able to block the path so that the enemies can't reach the target.
+  - Dynamic enemy paths will be implemented using the A&ast; search algorithm, a more thorough explanation is in the Algorithms section of this document. The players should not be able to block the path so that the enemies can't reach the target.
 - **Sound effects**
-    - We will implement different kinds of sound effects for various things in the game. For example enemy attacks will have sounds and buying or selling a tower will also have a sound.
+  - We will implement different kinds of sound effects for various things in the game. For example enemy attacks will have sounds and buying or selling a tower will also have a sound. 
 <br /> 
 ## Graphical user interface
 A simple user interface keeping track of lives, wave number and ingame currency. Towers are bought from a menu on the side. Below is an example of how it might look like:
@@ -47,7 +47,7 @@ A simple user interface keeping track of lives, wave number and ingame currency.
 <br /> 
 ![](https://i.imgur.com/Vrg0YCF.png)
 <br /> 
-The game window will consist of the map drawn in the middle, with information about the current game situation shown to the user at the top of the window. The user will be able to see the various towers available for purchase with relevant information for each of them, such as price and stats. By clicking on a tower on the map the user will be able to see information about the tower and either upgrade or sell the tower.
+The game window will consist of the map drawn in the middle, with information about the current game situation shown to the user at the top of the window. The user will be able to see the various towers available for purchase with relevant information for each of them, such as price and stats. By clicking on a tower on the map the user will be able to see information about the tower and either upgrade or sell the tower. 
 <br />
 ## Algorithms
 One algorithm that will be needed is the A&ast; search algorithm. It will be used for the dynamic enemy paths. Since we're using a grid system for our tower defence map it is a suitable algorithm to use since it's easy to implement and works efficiently. The algorithm will have nodes assigned to each map tile and will calculate the cost of the path to each tile and find the path with the lowest cost to the target tile.
