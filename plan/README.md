@@ -1,4 +1,4 @@
-# Project plan 28.10.2019
+# Project plan 01.11.2019
 
 ## Project description
 
@@ -18,6 +18,17 @@ We have abstract classes Tower and Monster which have subclasses that represent 
 <br /> 
 
 ## Schedule
+
+| Week  # |                                                                                   |
+| ------- | --------------------------------------------------------------------------------: |
+| Week 44 |                                          Project plan and general planning ready. |
+| Week 45 |     Setting up development environment. Start implementing the base for the game. |
+| Week 46 | Implement necessary classes and functions for the game. Have a basic working GUI. |
+| Week 47 |                                   Extend game features and enhance game graphics. |
+| Week 48 |                                   Extend game features and enhance game graphics. |
+| Week 49 |                                                     Project ready, final touches. |
+| Week 50 |                                                                     Project done. |
+<br />
 
 We will try to implement the basic structure for the game as soon as possible, which will allow us work more independently on various features.
 Preliminary after this, our workflow would mostly consist of opening git branches and making pull requests or just simply making git commits to the project. We could do occasionally meetings whenever we feel like we're in need of one.
@@ -57,15 +68,15 @@ In addition to all the basic features, we are planning to implement the followin
 A simple user interface keeping track of lives, wave number and ingame currency. Towers are bought from a menu on the side. Below is an example of how it might look like:
 <br /> 
 <br /> 
-![](https://i.imgur.com/Vrg0YCF.png)
+![](https://i.imgur.com/Vrg0YCF.png =600x)
 <br /> 
 The game window will consist of the map drawn in the middle, with information about the current game situation shown to the user at the top of the window. The user will be able to see the various towers available for purchase with relevant information for each of them, such as price and stats. By clicking on a tower on the map the user will be able to see information about the tower and either upgrade or sell the tower.
 <br />
 
 ## Algorithms
 
-One algorithm that will be needed is the A&ast; search algorithm. It will be used for the dynamic enemy paths. Since we're using a grid system for our tower defence map it is a suitable algorithm to use since it's easy to implement and works efficiently. The algorithm will have nodes assigned to each map tile and will calculate the cost of the path to each tile and find the path with the lowest cost to the target tile.  
-[https://en.wikipedia.org/wiki/A&ast;&lowbar;search_algorithm](https://en.wikipedia.org/wiki/A&ast;&lowbar;search_algorithm)
+One algorithm that will be needed is the A* search algorithm. It will be used for the dynamic enemy paths. Since we're using a grid system for our tower defence map it is a suitable algorithm to use since it's easy to implement and works efficiently. The algorithm will have nodes assigned to each map tile and will calculate the cost of the path to each tile and find the path with the lowest cost to the target tile.  
+[https://en.wikipedia.org/wiki/A*_search_algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm)
 
 We will also make use of Pythagoras' Theorem to calculate the distance to the closest enemy. The towers will attack the enemy closest to the tower. So to accomplish that we simply loop over each enemy and calculate the distance and choose the closest one. It may not be most efficient way of doing it but in our case we have such a low amount of towers and enemies that it is a suitable solution.  
 [https://en.wikipedia.org/wiki/Pythagorean_theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem)
@@ -78,3 +89,28 @@ We will use SFML for the rendering and sound effects. We chose SFML instead of S
 For building the project we will be using CMake since it was recommended and it should let us get cross-platform compatibility in our project relatively easily. CMake will also make it easier for us to manage libraries and dependencies, while keeping the project platform-independent.
 
 We might use Boost for more platform agnostic functionality that STL is missing. One use we would have from Boost is parsing setting files. Boost includes a Property tree which would allow us to parse XML, JSON, INI files, file paths in a rather simple way.
+
+## Coding conventions
+
+We aim to use Google’s own [C++ style guide](https://google.github.io/styleguide/cppguide.html) ; below you can find a collection of the most important choices:
+
+- *Most importantly*: Be consistent and use common sense.
+- The main language of the project is English, thus:
+  - All variable names will be in English
+    - Commenting  should be brief and concise, but still descriptive
+- Prefer no spaces inside parentheses
+- No tabs, only spaces. Indentation will be done with 2 spaces.
+- In conditionals the "*if*” and “*else*” keywords belong on separate lines.
+  - Space between *if* and open parenthesis, and between close parenthesis and open bracket
+    - Short conditionals may be written on the same line, without braces, if it improves readability. Otherwise use braces.
+- Classes:
+  - The *public:*, *protected:*, and *private:* keywords should be indented with one space
+  - The public section should be first, followed by the protected, and finally the private section.
+- Each line of text should at most 80 characters long.
+- Return types, parameters, and function declaration of the same line, if width allows.
+- Short and focused functions: if it extends 40 lines, splitting should be preferred.
+- *Structs*  for passive data, else use *class* .
+- General naming:
+  - Filenames are all lowercase, including dashes (-) and underscores (\_).
+  - Types are capitalized CamelCase.
+  - Variables are snake_case.
