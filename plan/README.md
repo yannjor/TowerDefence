@@ -100,7 +100,7 @@ We aim to use Google’s own [C++ style guide](https://google.github.io/stylegui
     - Commenting  should be brief and concise, but still descriptive
 - Prefer no spaces inside parentheses
 - No tabs, only spaces. Indentation will be done with 2 spaces.
-- In conditionals the "*if*” and “*else*” keywords belong on separate lines.
+- In conditionals the "*if*" and "*else*" keywords belong on separate lines.
   - Space between *if* and open parenthesis, and between close parenthesis and open bracket
     - Short conditionals may be written on the same line, without braces, if it improves readability. Otherwise use braces.
 - Classes:
