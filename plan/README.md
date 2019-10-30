@@ -68,7 +68,7 @@ In addition to all the basic features, we are planning to implement the followin
 A simple user interface keeping track of lives, wave number and ingame currency. Towers are bought from a menu on the side. Below is an example of how it might look like:
 <br /> 
 <br /> 
-![](https://i.imgur.com/Vrg0YCF.png =600x)
+![](https://i.imgur.com/Vrg0YCF.png=600x)
 <br /> 
 The game window will consist of the map drawn in the middle, with information about the current game situation shown to the user at the top of the window. The user will be able to see the various towers available for purchase with relevant information for each of them, such as price and stats. By clicking on a tower on the map the user will be able to see information about the tower and either upgrade or sell the tower.
 <br />
