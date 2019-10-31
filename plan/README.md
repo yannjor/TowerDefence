@@ -70,7 +70,7 @@ A simple user interface keeping track of lives, wave number and ingame currency.
 <br /> 
 ![](https://i.imgur.com/Vrg0YCF.png=600x)
 <br /> 
-The game window will consist of the map drawn in the middle, with information about the current game situation shown to the user at the top of the window. The user will be able to see the various towers available for purchase with relevant information for each of them, such as price and stats. By clicking on a tower on the map the user will be able to see information about the tower and either upgrade or sell the tower.
+The game window will consist of the map drawn in the middle, with information about the current game situation shown to the user at the top of the window. In the example above the red tile is the enemy spawn, the green tile is the player's base. The grey tiles are towers or otherwise blocked tiles and the enemies will follow the brown path to the players base. The user will be able to see the various towers available for purchase with relevant information for each of them, such as price and stats. By clicking on a tower on the map the user will be able to see information about the tower and either upgrade or sell the tower.
 <br />
 
 ## Algorithms
