@@ -4,10 +4,7 @@ Current directory structure:
 
   * `plan/` -- Our project plan can be found here. It is also included as a PDF.
 
-  * `doc/` -- The documentation sources related to your project should be put here.
-    You may use different tools for documentation (e.g. latex),
-    but we hope to get the final version of the document
-    **also as pdf file**.
+  * `doc/` -- The documentation sources related to our project can be found here. The final version of the doucument is also available as a PDF
 
   * `src/` -- Here are the C++ source files. 
 
