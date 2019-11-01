@@ -20,7 +20,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/macros")
 include(auto_collect)
 
 # Find the SFML libraries
-find_package(SFML 2.5 REQUIRED audio graphics window system)
+find_package(SFML 2.4 REQUIRED audio graphics window system)
 
 # Add core sources
 add_subdirectory(src)

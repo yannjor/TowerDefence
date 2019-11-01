@@ -10,5 +10,7 @@ add_executable(tower-defence ${SRC})
 # Link the library
 target_link_libraries(tower-defence
 	PUBLIC
-        sfml-graphics 
+        sfml-graphics
+        sfml-window
+        sfml-system
         sfml-audio)
