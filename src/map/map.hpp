@@ -11,6 +11,7 @@ class Map {
   const int GetWidth() const;
   const int GetHeight() const;
   const std::vector<std::vector<Tile>> GetTiles() const;
+  const Tile& operator()(int x, int y) const;
 
  private:
   std::vector<std::vector<Tile>> tiles_;

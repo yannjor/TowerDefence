@@ -34,6 +34,8 @@ const int Map::GetWidth() const { return tiles_[0].size(); }
 
 const std::vector<std::vector<Tile>> Map::GetTiles() const { return tiles_; };
 
+const Tile& Map::operator()(int x, int y) const { return tiles_[y][x]; };
+
 std::ostream& operator<<(std::ostream& os, const Map& map) {
   for (auto row : map.GetTiles()) {
     for (auto tile : row) {
