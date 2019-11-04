@@ -1,10 +1,13 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "map/map.hpp"
 #include "tower/tower.hpp"
 
 int main() {
   Tower tower;
   tower.PrintTest();
+  Map map("map.txt");
+  std::cout << map;
   sf::Window window(sf::VideoMode(800, 600), "Tower Defence");
 
   // run the program as long as the window is open
