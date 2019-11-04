@@ -25,6 +25,7 @@ Map::Map(const std::string& filename) {
       i++;
     }
   }
+  is.close();
 }
 
 const int Map::GetHeight() const { return tiles_.size(); }
