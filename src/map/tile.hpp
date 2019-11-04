@@ -1,9 +1,14 @@
+#pragma once
+#include <iostream>
+enum Types { Path, Empty };
+
 class Tile {
-public:
-    Tile(): occupied_(false) { }
-    bool IsOccupued() { return occupied_; }
+ public:
+  Tile(Types type = Empty);
+  const Types GetType() const;
 
-
-private:
-    bool occupied_;
+ private:
+  Types type_;
 };
+
+std::ostream& operator<<(std::ostream& os, const Tile& tile);

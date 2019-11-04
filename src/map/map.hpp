@@ -1,17 +1,19 @@
+#pragma once
+#include <fstream>
+#include <iostream>
+#include <string>
 #include <vector>
 #include "tile.hpp"
 
 class Map {
-public:
-    Map();
+ public:
+  Map(const std::string& filename);
+  const int GetWidth() const;
+  const int GetHeight() const;
+  const std::vector<std::vector<Tile>> GetTiles() const;
 
-
-
-
-
-private:
-    int width;
-    int height;
-    std::vector<std::vector<Tile>> tiles;
-
+ private:
+  std::vector<std::vector<Tile>> tiles_;
 };
+
+std::ostream& operator<<(std::ostream& os, const Map& map);
