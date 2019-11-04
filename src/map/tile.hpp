@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+
 enum Types { Path, Empty };
 
 class Tile {
@@ -9,6 +10,7 @@ class Tile {
 
  private:
   Types type_;
+  std::string texture_;
 };
 
 std::ostream& operator<<(std::ostream& os, const Tile& tile);
