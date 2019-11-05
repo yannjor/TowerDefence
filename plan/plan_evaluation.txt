@@ -1,0 +1,7 @@
+The project plan details well the intended structure of the project and shows 
+that some thought went into the technology and library choices. The plan is 
+clear and has a good idea about what can be done in the given time. The extra 
+features could have been mentioned with the corresponding points that they 
+give, but no points were deducted for this.
+
+Points for the project plan: 3
