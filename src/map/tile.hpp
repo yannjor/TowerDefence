@@ -7,6 +7,7 @@ class Tile {
  public:
   Tile(Types type = Empty);
   const Types GetType() const;
+  const std::string& GetTexture() const;
 
  private:
   Types type_;

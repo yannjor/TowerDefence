@@ -40,18 +40,7 @@ void Game::DrawMap() {
   for (int y = 0; y < map_.GetHeight(); y++) {
     for (int x = 0; x < map_.GetWidth(); x++) {
       Tile tile = map_(x, y);
-      switch (tile.GetType()) {
-        case Empty:
-          texture = &textures_.at("sprites/grass_tile_1.png");
-          break;
-        case Path:
-          texture = &textures_.at("sprites/sand_tile.png");
-          break;
-        default:
-          texture = &textures_.at("sprites/grass_tile_1.png");
-          break;
-      }
-
+      texture = &textures_.at(tile.GetTexture());
       sprite.setTexture(*texture);
       sprite.setPosition(x * tile_size, y * tile_size);
       sprite.setScale(tile_size / (float)(*texture).getSize().x,
